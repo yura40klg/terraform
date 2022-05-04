@@ -38,8 +38,8 @@ network_interface {
    }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
-    docker-container-declaration = file("decdev.yml")
+    docker-container-declaration = file("dev.yml")
+    user-data = file("user_config.yml")
   }
 }
 resource "yandex_compute_instance" "vm2" {
@@ -62,8 +62,8 @@ network_interface {
    }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
-    docker-container-declaration = file("decprod.yml")
+    docker-container-declaration = file("prod.yml")
+    user-data = file("user_config.yml")
   }
 }
 
