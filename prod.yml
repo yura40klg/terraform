@@ -1,0 +1,9 @@
+GNU nano 4.8                                                          /home/yura/terraform/prod.yml                                                          Modified
+spec:
+  containers:
+  - image: cr.yandex/crpl25ck77kdjfgeldov/bitsl/tomcatboxfuse
+    securityContext:
+      privileged: false
+    stdin: false
+    tty: false
+
