@@ -15,4 +15,4 @@ RUN apt-get update \
    && aws configure set aws_secret_access_key "____" \
    && aws configure set region "ru-central1"  \
    && cd /var/share \
-   && aws --endpoint-url=https://storage.yandexcloud.net s3 cp hello-1.0.war s3://bucketyura/hello.war
+   && aws --endpoint-url=https://storage.yandexcloud.net s3 cp hello-1.0.war s3://art40/hello.war
